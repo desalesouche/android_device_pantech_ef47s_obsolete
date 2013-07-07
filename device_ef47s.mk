@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, build/target/product/full.mk)
 
+# Set build date
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_ef47s
 PRODUCT_DEVICE := ef47s
@@ -55,3 +56,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     ro.com.google.locationfeatures=1 \
     dalvik.vm.dexopt-flags=m=y
+
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_LOCALES += en_US xhdpi
