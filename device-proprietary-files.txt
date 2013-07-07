@@ -9,6 +9,12 @@ bin/thermald
 # Audio
 lib/libacdbloader.so
 lib/libaudcal.so
+lib/soundfx/libbundlewrapper.so
+lib/soundfx/libreverbwrapper.so
+lib/soundfx/libvisualizer.so
+lib/soundfx/libaudiopreprocessing.so
+lib/soundfx/libdownmix.so
+lib/soundfx/libdolbymobileeffect.so
 
 # Camera
 lib/libgemini.so
