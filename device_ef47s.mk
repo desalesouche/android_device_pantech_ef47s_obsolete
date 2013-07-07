@@ -48,3 +48,10 @@ PRODUCT_COPY_FILES += \
 #  device/pantech/ef47s/ramdisk/charger:root/charger
 #  device/pantech/ef47s/ramdisk/init.rc:root/init.rc \
 #  device/pantech/ef47s/ramdisk/default.prop:root/default.prop \
+
+# Extra properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.setupwizard.enable_bypass=1 \
+    dalvik.vm.lockprof.threshold=500 \
+    ro.com.google.locationfeatures=1 \
+    dalvik.vm.dexopt-flags=m=y
