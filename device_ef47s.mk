@@ -34,6 +34,29 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/pantech/ef47s/gps/gps.conf:system/etc/gps.conf
 
+# Modules
+PRODUCT_COPY_FILES += \
+    device/pantech/ef47s/modules/prima/wlan.ko:system/lib/modules/wlan.ko \
+    device/pantech/ef47s/modules/test-iosched.ko:system/lib/modules/test-iosched.ko \
+    device/pantech/ef47s/modules/tcp_westwood.ko:system/lib/modules/tcp_westwood.ko \
+    device/pantech/ef47s/modules/tcp_htcp.ko:system/lib/modules/tcp_htcp.ko \
+    device/pantech/ef47s/modules/spidev.ko:system/lib/modules/spidev.ko \
+    device/pantech/ef47s/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
+    device/pantech/ef47s/modules/reset_modem.ko:system/lib/modules/reset_modem.ko \
+    device/pantech/ef47s/modules/radio-iris-transport.ko:system/lib/modules/radio-iris-transport.ko \
+    device/pantech/ef47s/modules/qcrypto.ko:system/lib/modules/qcrypto.ko \
+    device/pantech/ef47s/modules/qcedev.ko:system/lib/modules/qcedev.ko \
+    device/pantech/ef47s/modules/qce40.ko:system/lib/modules/qce40.ko \
+    device/pantech/ef47s/modules/msm-buspm-dev.ko:system/lib/modules/msm-buspm-dev.ko \
+    device/pantech/ef47s/modules/mmc_test.ko:system/lib/modules/mmc_test.ko \
+    device/pantech/ef47s/modules/mckernelapi.ko:system/lib/modules/mckernelapi.ko \
+    device/pantech/ef47s/modules/mcdrvmodule.ko:system/lib/modules/mcdrvmodule.ko \
+    device/pantech/ef47s/modules/ks8851.ko:system/lib/modules/ks8851.ko \
+    device/pantech/ef47s/modules/gspca_main.ko:system/lib/modules/gspca_main.ko \
+    device/pantech/ef47s/modules/evbug.ko:system/lib/modules/evbug.ko \
+    device/pantech/ef47s/modules/eeprom_93cx6.ko:system/lib/modules/eeprom_93cx6.ko \
+    device/pantech/ef47s/modules/dma_test.ko:system/lib/modules/dma_test.ko \
+    device/pantech/ef47s/modules/prima/cfg80211.ko:system/lib/modules/cfg80211.ko
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := ef47s
