@@ -21,8 +21,13 @@ $(call inherit-product, build/target/product/full.mk)
 
 # Set build date
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_ef47s
+
+# Discard inherited values and use our own instead.
+PRODUCT_NAME := ef47s
 PRODUCT_DEVICE := ef47s
+PRODUCT_BRAND := SKY
+PRODUCT_MODEL := Vega Racer 2
+PRODUCT_MANUFACTURER := Pantech
 
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
