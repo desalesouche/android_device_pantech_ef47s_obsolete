@@ -85,8 +85,8 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom androidboot.carrier=SKT-KOR user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 maxcpus=2 loglevel=0
 #07/02/2013 Alex Bokhankovich: I suppose this could be decreased
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
-#TARGET_KERNEL_SOURCE := kernel/pantech/ef47s
-#TARGET_KERNEL_CONFIG := ef47_config
+TARGET_KERNEL_SOURCE := kernel/pantech/ef47s
+TARGET_KERNEL_CONFIG := ef47s_custom_defconfig
 TARGET_PREBUILT_KERNEL := device/pantech/ef47s/kernel
 
 # USB
