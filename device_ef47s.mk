@@ -36,7 +36,7 @@ PRODUCT_COPY_FILES += \
 
 # Modules
 PRODUCT_COPY_FILES += \
-    device/pantech/ef47s/modules/prima/wlan.ko:system/lib/modules/wlan.ko \
+    device/pantech/ef47s/modules/prima/prima_wlan.ko:system/lib/modules/prima_wlan.ko \
     device/pantech/ef47s/modules/test-iosched.ko:system/lib/modules/test-iosched.ko \
     device/pantech/ef47s/modules/tcp_westwood.ko:system/lib/modules/tcp_westwood.ko \
     device/pantech/ef47s/modules/tcp_htcp.ko:system/lib/modules/tcp_htcp.ko \
@@ -157,6 +157,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libaudio-resampler \
     tinymix
+
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8960
@@ -194,6 +195,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     make_ext4fs \
     setup_fs
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    hci_qcomm_init
+
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8960
+
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8960
 
 # overlays
 DEVICE_PACKAGE_OVERLAYS += device/pantech/ef47s/overlay
