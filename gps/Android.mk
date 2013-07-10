@@ -22,7 +22,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(BOARD_VENDOR),htc)
+ifeq ($(BOARD_VENDOR),pantech)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8960)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
