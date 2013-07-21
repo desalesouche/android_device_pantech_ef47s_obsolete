@@ -582,4 +582,12 @@ struct vdec_mv_buff_size{
 	int alignment;
 };
 
+struct vdec_meta_buffers {
+	size_t size;
+	int count;
+	int pmem_fd;
+	int pmem_fd_iommu;
+	int offset;
+};
+
 #endif /* end of macro _VDECDECODER_H_ */
