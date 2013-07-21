@@ -242,6 +242,7 @@ struct vdec_allocatorproperty {
 	size_t buffer_size;
 	uint32_t alignment;
 	uint32_t buf_poolid;
+	size_t meta_buffer_size;
 };
 
 struct vdec_bufferpayload {
