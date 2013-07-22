@@ -130,6 +130,17 @@ enum cp_mem_usage {
  */
 #define ION_IOMMU_UNMAP_DELAYED 1
 
+
+/**
+ * heap flags - the lower 16 bits are used by core ion, the upper 16
+ * bits are reserved for use by the heaps themselves.
+ */
+#define ION_FLAG_CACHED 1		/* mappings of this buffer should be
+					   cached, ion will do cache
+					   maintenance when the buffer is
+					   mapped for dma */
+
+
 #ifdef __KERNEL__
 #include <linux/err.h>
 #include <mach/ion.h>
