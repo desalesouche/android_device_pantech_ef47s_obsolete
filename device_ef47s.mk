@@ -86,10 +86,10 @@ PRODUCT_COPY_FILES += \
   device/pantech/ef47s/ramdisk/resetlogo.rle:root/resetlogo.rle \
   device/pantech/ef47s/ramdisk/ueventd.goldfish.rc:root/ueventd.goldfish.rc \
   device/pantech/ef47s/ramdisk/ueventd.qcom.rc:root/ueventd.qcom.rc \
-  device/pantech/ef47s/ramdisk/ueventd.rc:root/ueventd.rc
-#  device/pantech/ef47s/ramdisk/charger:root/charger
-#  device/pantech/ef47s/ramdisk/init.rc:root/init.rc \
-#  device/pantech/ef47s/ramdisk/default.prop:root/default.prop 
+  device/pantech/ef47s/ramdisk/ueventd.rc:root/ueventd.rc \
+  device/pantech/ef47s/ramdisk/charger:root/charger \
+  device/pantech/ef47s/ramdisk/init.rc:root/init.rc \
+  device/pantech/ef47s/ramdisk/default.prop:root/default.prop 
 
 
 # WPA supplicant config
