@@ -164,16 +164,16 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libdivxdrmdecrypt \
-    libOmxCore \
-    libOmxVdec \
-    libOmxVenc \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxEvrcEnc \
-    libOmxQcelp13Enc \
-    libstagefrighthw
+#    libc2dcolorconvert \
+#    libdivxdrmdecrypt \
+#    libOmxCore \
+#    libOmxVdec \
+#    libOmxVenc \
+#    libOmxAacEnc \
+#    libOmxAmrEnc \
+#    libOmxEvrcEnc \
+#    libOmxQcelp13Enc \
+#    libstagefrighthw
 
 # Power
 PRODUCT_PACKAGES += \
