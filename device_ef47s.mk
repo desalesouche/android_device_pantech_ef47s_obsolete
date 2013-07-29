@@ -89,7 +89,7 @@ PRODUCT_COPY_FILES += \
   device/pantech/ef47s/ramdisk/ueventd.rc:root/ueventd.rc
 #  device/pantech/ef47s/ramdisk/charger:root/charger
 #  device/pantech/ef47s/ramdisk/init.rc:root/init.rc \
-#  device/pantech/ef47s/ramdisk/default.prop:root/default.prop \
+#  device/pantech/ef47s/ramdisk/default.prop:root/default.prop 
 
 
 # WPA supplicant config
@@ -100,10 +100,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/pantech/ef47s/configs/audio_policy.conf:system/etc/audio_policy.conf \
     device/pantech/ef47s/configs/media_profiles.xml:system/etc/media_profiles.xml \
-    device/pantech/ef47s/configs/media_codecs.xml:system/etc/media_codecs.xml
+    device/pantech/ef47s/configs/media_codecs.xml:system/etc/media_codecs.xml 
 
 # QC thermald config
-PRODUCT_COPY_FILES +=device/pantech/ef47s/configs/thermald.conf:system/etc/thermald.conf
+PRODUCT_COPY_FILES +=device/pantech/ef47s/configs/thermald.conf:system/etc/thermald.conf 
 
 # vold config
 PRODUCT_COPY_FILES += \
@@ -111,20 +111,21 @@ PRODUCT_COPY_FILES += \
 
 # Sound configs
 PRODUCT_COPY_FILES += \
-    device/pantech/ef47s/dsp/snd_soc_msm/snd_soc_msm_2x:/system/etc/snd_soc_msm/snd_soc_msm_2x
+    device/pantech/ef47s/dsp/snd_soc_msm/snd_soc_msm_2x:/system/etc/snd_soc_msm/snd_soc_msm_2x 
 
 # Keylayouts and Keychars
 PRODUCT_COPY_FILES += \
-    device/pantech/ef47s/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/AVRCP.kl \
-    device/pantech/ef47s/keylayout/keypad_8960.kl:system/usr/keylayout/h2w_headset.kl \
-    device/pantech/ef47s/keylayout/Button_Jack.kl:system/usr/keylayout/msm8960-snd-card_Button_Jack.kl \
+    device/pantech/ef47s/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+    device/pantech/ef47s/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
+    device/pantech/ef47s/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
+    device/pantech/ef47s/keylayout/Button_Jack.kl:system/usr/keylayout/Button_Jack.kl \
     device/pantech/ef47s/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
-    device/pantech/ef47s/keylayout/qt602240_ts_input_ef47s.kl:system/usr/keylayout/synaptics-rmi-touchscreen.kl
+    device/pantech/ef47s/keylayout/qt602240_ts_input_ef47s.kl:system/usr/keylayout/qt602240_ts_input_ef47s.kl 
 	
 # Input device config
 PRODUCT_COPY_FILES += \
     device/pantech/ef47s/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
-    device/pantech/ef47s/idc/qwerty.idc:system/usr/idc/qwerty.idc \
+    device/pantech/ef47s/idc/qwerty.idc:system/usr/idc/qwerty.idc 
 
 # NFC
 PRODUCT_PACKAGES += \
