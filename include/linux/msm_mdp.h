@@ -176,6 +176,7 @@ enum {
 #define MDP_OV_PLAY_NOWAIT		0x00200000
 #define MDP_SOURCE_ROTATED_90		0x00100000
 #define MDP_DPP_HSIC			0x00080000
+#define MDP_OVERLAY_PP_CFG_EN		0x00080000
 #define MDP_BACKEND_COMPOSITION		0x00040000
 #define MDP_BORDERFILL_SUPPORTED	0x00010000
 #define MDP_SECURE_OVERLAY_SESSION      0x00008000
@@ -224,6 +225,24 @@ struct mdp_ccs {
 	int direction;			/* MDP_CCS_RGB2YUV or YUV2RGB */
 	uint16_t ccs[MDP_CCS_SIZE];	/* 3x3 color coefficients */
 	uint16_t bv[MDP_BV_SIZE];	/* 1x3 bias vector */
+};
+
+#define MDP_MAX_FENCE_FD 10
+#define MDP_BUF_SYNC_FLAG_WAIT 1
+struct mdp_buf_sync {
+ uint32_t flags;
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ uint32_t acq_fen_fd_cnt;
+ int *acq_fen_fd;
+ int *rel_fen_fd;
+};
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+struct mdp_buf_fence {
+ uint32_t flags;
+ uint32_t acq_fen_fd_cnt;
+ int acq_fen_fd[MDP_MAX_FENCE_FD];
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ int rel_fen_fd[MDP_MAX_FENCE_FD];
 };
 
 struct mdp_csc {
